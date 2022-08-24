@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trainticketbooking.HelloController">
+   <children>
+      <Label fx:id="ticketClass" layoutX="41.0" layoutY="31.0" text="Ticket Class :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="businessClass" layoutX="159.0" layoutY="34.0" mnemonicParsing="false" text="Business Class">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="economiClass" layoutX="300.0" layoutY="34.0" mnemonicParsing="false" text="Economi Class">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="69.0" layoutY="64.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="addressChoice" layoutX="159.0" layoutY="65.0" prefHeight="25.0" prefWidth="271.0" />
+      <Label layoutX="92.0" layoutY="103.0" text="Time :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="142.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageShow" layoutX="159.0" layoutY="270.0" text="Message" textAlignment="CENTER" textFill="#20ae3d">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="bookNow" layoutX="239.0" layoutY="185.0" mnemonicParsing="false" onAction="#bookNow" text="Book Now">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="datePicker" layoutX="159.0" layoutY="143.0" prefHeight="25.0" prefWidth="271.0" />
+      <ChoiceBox fx:id="timePicker" layoutX="159.0" layoutY="104.0" prefHeight="25.0" prefWidth="271.0" />
+   </children>
+</AnchorPane>
